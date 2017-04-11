@@ -41,7 +41,7 @@
 
           <div class="merchant">
             <div class="merchant-title">
-              周边商家
+              —— 周边商家 ——
             </div>
             <ul class="merchant-list">
               <li v-for="merchant in merchantList" v-link="{name: 'detail', params: {id:merchant.id}}">

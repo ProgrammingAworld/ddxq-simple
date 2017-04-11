@@ -98,9 +98,7 @@
     }
   },
   ready: function() {
-    console.log(Vue);
     var that = this;
-    console.log(this.$route.params);
     this.$http.get('./mock/'+this.$route.params.id+'.json').then( (res) => {    //ajax 的URL
       try {
           this.list = JSON.parse(res.data).data;
@@ -110,12 +108,11 @@
       Vue.nextTick(function(){          //当artId改变时自动传值#content
         that.artId = "neicircle-index-scroll";
         that.fn = function() {
-              console.log(that.artId);
-              var myScroll=new Iscroll('#'+that.artId,{
-                click:true,
-                mouseWheel: true,
-                probeType: 3
-              });
+          var myScroll=new Iscroll('#'+that.artId,{
+            click:true,
+            mouseWheel: true,
+            probeType: 3
+          });
         }
       });
 
