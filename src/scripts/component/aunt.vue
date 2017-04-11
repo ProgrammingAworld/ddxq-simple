@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="aunt-container">
   <header class="header">
-    <div class="iconfont3" v-link="{path: '/index/service'}">&#xe611;</div>
+    <div class="iconfont3" @click="back">&#xe611;</div>
     <h1>周边商家</h1>
   </header>
   <div class="topbar">
@@ -97,7 +97,11 @@ export default {
   },
   computed: {},
   mounted () {},
-  methods: {},
+  methods: {
+    back:function(){
+      window.history.go(-1);
+    }
+  },
   components: {}
 }
 </script>

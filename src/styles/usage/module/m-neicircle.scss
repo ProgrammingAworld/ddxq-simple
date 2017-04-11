@@ -124,7 +124,6 @@ body > div {
                 width: 100px;
                 height: 50px;
                 @include border($border-width:1px,$border-color:#fe602b);
-                border-radius: 20px;
                 p:first-child{
                   color: #fe602b;
                   width: 100px;
@@ -152,5 +151,3 @@ body > div {
 
   }
 }
-
-

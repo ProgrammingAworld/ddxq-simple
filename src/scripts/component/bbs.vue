@@ -54,12 +54,11 @@
       Vue.nextTick(function(){          //当artId改变时自动传值#content
         that.artId = "bbsindex-scroll";
         that.fn = function() {
-              console.log(that.artId);
-              var myScroll=new Iscroll('#'+that.artId,{
-                click:true,
-                mouseWheel: true,
-                probeType: 3
-              });
+          var myScroll=new Iscroll('#'+that.artId,{
+            click:true,
+            mouseWheel: true,
+            probeType: 3
+          });
         }
       });
     })
@@ -70,4 +69,3 @@
   components: {}
   }
 </script>
-

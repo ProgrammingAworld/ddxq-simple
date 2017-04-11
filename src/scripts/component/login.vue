@@ -53,7 +53,6 @@ export default {
         })
         if(!isUser){
           if(!re.test(this.tel)){
-            console.log('请输入正确的手机号');
             return false;
           }
           myStore.set('user',{tel:this.tel});
@@ -63,20 +62,17 @@ export default {
           return true;
         }else if(isLogin){
           if(!re.test(this.tel)){
-            console.log('请输入正确的手机号');
             return false;
           }
           myStore.set('user',{tel:this.tel});
           window.history.go(-1);
           return true;
         }else{
-          console.log("账号密码错误！");
           this.userPath = '';
           return false;
         }
       }else{
         if(!re.test(this.tel)){
-          console.log('请输入正确的手机号');
           return false;
         }
         myStore.set('user',{tel:this.tel});

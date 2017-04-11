@@ -1,7 +1,7 @@
 <template lang="html">
  <div class="commission-container">
    <header class="header">
-     <div class="iconfont3" v-link="{path: '/index/service'}">&#xe611;</div>
+     <div class="iconfont3" @click="back">&#xe611;</div>
      <h1>代办事</h1>
    </header>
    <div id="cleariscroll">
@@ -68,7 +68,11 @@ export default {
   },
   computed: {},
   mounted () {},
-  methods: {},
+  methods: {
+    back(){
+      window.history.go(-1);
+    }
+  },
   components: {}
 }
 </script>

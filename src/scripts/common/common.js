@@ -13,7 +13,7 @@ let commonUtil = {
          var dom = document.getElementById(scope).getElementsByTagName('IMG');
          var arr = [];
          for(var i=0;i<dom.length;i++){
-             arr.push(dom[i]); 
+             arr.push(dom[i]);
          }
          arr.forEach(function(key,value) {
          //通过高度判断是否加载完毕
@@ -23,7 +23,6 @@ let commonUtil = {
          }
        });
        if (isLoad) {
-           //console.log("success");
          clearTimeout(img_t);
          callback();
        } else {
@@ -39,13 +38,10 @@ let commonUtil = {
      var that = this;
      Vue.directive('scroll',function(value) {
        // isAllLoaded
-            console.log(value);
        if(value.artIds){
-            console.log(value.artIds);
-           console.log(value.fns);
         that.isAllLoaded(value.artIds, value.fns)
        }
-      
+
      })
    }
 }
