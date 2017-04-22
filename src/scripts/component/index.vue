@@ -5,13 +5,15 @@
       </div>
       <div id="footer">
         <ul>
-          <li v-bind:class="cur == $index ? 'active' : ''" v-for="tab in tablist" v-link="{path:tab.path}">
+          <li
+            v-bind:class="cur == $index ? 'active' : ''"
+            v-for="tab in tablist"
+            v-link="{path:tab.path}">
             <i class="iconfont">{{{tab.icon}}}</i>
             <b>{{tab.name}}</b>
           </li>
         </ul>
       </div>
-
     </div>
 </template>
 
@@ -20,11 +22,9 @@ import  {getIndex}  from '../vuex/getters'
 export default {
     data() {
         return {
-            msg: 'Hello Vue!',
-            // cur:0,
             tablist:[
-              {path: '/index', icon: '&#xe664;', name: '快送'},
-              {path: '/index/service', icon: '&#xe684;', name: '生活服务'},
+              {path: '/index', icon: '&#xe664;', name: '生活百货'},
+              {path: '/index/service', icon: '&#xe684;', name: '生活服务'},    
               {path: '/index/neighbor', icon: '&#xe68f;', name: '邻居'},
               {path: '/index/my', icon: '&#xe623;', name: '我'}
             ]
