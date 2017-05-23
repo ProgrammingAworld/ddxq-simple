@@ -23,8 +23,8 @@ export default {
     data() {
         return {
             tablist:[
-              {path: '/index', icon: '&#xe664;', name: '生活百货'},
-              {path: '/index/service', icon: '&#xe684;', name: '生活服务'},    
+              {path: '/index/service', icon: '&#xe684;', name: '生活服务'},
+              {path: '/index', icon: '&#xe664;', name: '快送'},
               {path: '/index/neighbor', icon: '&#xe68f;', name: '邻居'},
               {path: '/index/my', icon: '&#xe623;', name: '我'}
             ]
@@ -43,4 +43,7 @@ export default {
 
     }
 }
+// {path: '/index/service', icon: '&#xe684;', name: '生活服务'},
+// {path: '/index/neighbor', icon: '&#xe68f;', name: '邻居'},
+// {path: '/index/my', icon: '&#xe623;', name: '我'}
 </script>

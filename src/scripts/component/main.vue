@@ -85,7 +85,7 @@
       }
     },
     ready:function() {
-      this.change(0);
+      this.change(1);
       let that = this;
       this.$http.get('./mock/navlist.json')
         .then((res) => {

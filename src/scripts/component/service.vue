@@ -22,6 +22,7 @@ export default {
       servicelist:[
         {src:"./images/untitled4.png",tit:"家政阿姨",direction:"找阿姨上叮咚，无需中介费",path:"/aunt"},
         {src:"./images/untitled1.png",tit:"专业清洗",direction:"深度清洁，全新净界",path:"/clear"},
+        {src:"./images/untitled1.png",tit:"生活百货",direction:"只有你想不到，没有我们送不了",path:"/index"},
         {src:"./images/untitled3.png",tit:"洗衣",direction:"上门取送",path:"/aunt"},
         {src:"./images/untitled2.png",tit:"代办事",direction:"急速响应，安全放心",path:"/commission"},
         {src:"./images/untitled0.png",tit:"应急号码通",direction:"开锁送水，周边便利",path:"/numbersense"},
@@ -35,7 +36,7 @@ export default {
     }
    },
    ready:function(){
-     this.change(1);
+     this.change(0);
    },
   computed: {},
   mounted () {},
