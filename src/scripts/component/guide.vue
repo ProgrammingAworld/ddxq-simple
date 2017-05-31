@@ -8,7 +8,8 @@
           </div>
           <div class="slide-txt">
             <img :src="img[1]" alt="" v-link="{path: '/index'}"/>
-            <input v-if="$index ==3" class="btn" type="button" name="name" value="立即开启" v-link="{path: '/index'}">
+            <input v-if="$index ==3" class="btn" type="button" name="name" value="立即开启"
+            v-link="{path: '/index/service'}">
           </div>
         </div>
       </div>

@@ -8,6 +8,8 @@
      <div class="top-bg">
        <img src="/android_asset/www/images/clearbg.png" alt="" />
      </div>
+
+
      <div class="clear-tit">
        <img src="/android_asset/www/images/daishop.png" alt="" />
      </div>
@@ -20,6 +22,12 @@
          </div>
        </li>
      </ul>
+
+     <div id="cleariscroll">
+       <div class="top-bg">
+         <img src="/android_asset/www/images/commisstion1.png" alt="" />
+       </div>
+
      <div class="clear-tit">
        <img src="/android_asset/www/images/daishop.png" alt="" />
      </div>
@@ -45,6 +53,16 @@ export default {
     }
   },
   ready:function(){
+    this.$http.get('./mock/commission1.json')
+    .then((res)=>{
+    var resData = "";
+    try {
+      resData = JSON.parse(res.data);
+    }catch (e) {
+      resData = res.data;
+    }
+      this.clearlist=resData;
+    })
     this.$http.get('./mock/clear1.json')
     .then((res)=>{
     var resData = "";

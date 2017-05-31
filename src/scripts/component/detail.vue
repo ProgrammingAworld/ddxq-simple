@@ -3,7 +3,7 @@
     <header id="detail-head">
       <div class="left-h">
         <image v-on:click="back" src="./images/back.png" alt="" />
-        <image v-if="isshow" src="./images/exit.png" alt="" />
+        <!-- <image v-if="isshow" src="./images/exit.png" alt="" /> -->
         {{product.name}}
       </div>
       <image src="./images/detail-search.png" alt="" />
@@ -33,16 +33,21 @@
                     </b>
                   </div>
                 </div>
-                <image class="add-btn" src="./images/add_label.png">
-
+                <image v-on:click="cutToBuyCar(pro.price,pro.proimg)" class="add-btn" src="./images/decrease.png">
                 </image>
-
+                <image v-on:click="addToBuyCar(pro.price,pro.proimg)" class="add-btn" src="./images/add_label.png">
+                </image>
               </li>
           </template>
         </section>
       </ul>
-
     </section>
+    <div v-show="showBuyCar" id="buy-car">
+      <image v-bind:src="imgUrl" />
+      <span class="total-price">￥<i>{{totalPrice}}</i> </span>
+      <i class="num">已选择{{num}}件商品</i>
+      <span class="button" v-link="{path: '/buycar'}">选好了</span>
+    </div>
   </div>
 </template>
 
@@ -53,7 +58,11 @@
       return {
         product:{},
         isshow:false,
-        curIndex:0
+        curIndex:0,
+        showBuyCar:false,
+        imgUrl:'',
+        totalPrice:0,
+        num:0
       }
     },
     ready:function(){
@@ -84,6 +93,29 @@
       },
       switchSubpage:function(index){
         this.curIndex = index;
+      },
+      addToBuyCar:function(price,url){
+        this.showBuyCar = true;
+        this.imgUrl = url;
+        this.totalPrice = this.totalPrice + parseFloat(price);
+        this.num += 1;
+      },
+      cutToBuyCar:function(price,url){
+        this.imgUrl = url;
+        if (this.totalPrice <= 0) {
+          this.totalPrice = 0;
+          this.num = 0;
+          this.showBuyCar = false;
+        }else{
+          this.totalPrice = this.totalPrice - parseFloat(price);
+        }
+        if (this.num <= 1) {
+          this.num = 0;
+          this.totalPrice = 0;
+          this.showBuyCar = false;
+        }else{
+          this.num -= 1;
+        }
       }
     }
 

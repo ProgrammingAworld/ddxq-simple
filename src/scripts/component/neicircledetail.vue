@@ -73,7 +73,7 @@
     <footer>
       <div>
         <img src="/android_asset/www/images/ic_merchant_call.png" alt=""/>
-        <p>联系团长</p>
+        <a href="tel:18753377153"><p>联系团长</p></a>
       </div>
       <div class="footercler"></div>
       <div>立即参团</div>

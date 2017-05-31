@@ -16,7 +16,7 @@
   </div>
   <div id="auntiscroll">
     <ul class="aunt-list">
-      <li v-for="item in auntList" v-link="{name: 'detail', params: {id:item.id}}">
+      <li v-for="item in auntList">
         <img v-bind:src="item.merchantimg" alt=" " />
         <section>
           <b>

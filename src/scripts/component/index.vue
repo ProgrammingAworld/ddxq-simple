@@ -24,8 +24,8 @@ export default {
         return {
             tablist:[
               {path: '/index/service', icon: '&#xe684;', name: '生活服务'},
-              {path: '/index', icon: '&#xe664;', name: '快送'},
               {path: '/index/neighbor', icon: '&#xe68f;', name: '邻居'},
+              {path: '/buycar', icon: '&#xe664;', name: '购物车'},
               {path: '/index/my', icon: '&#xe623;', name: '我'}
             ]
         }

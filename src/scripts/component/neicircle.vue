@@ -2,7 +2,7 @@
   <div class="neicirclebox">
 
     <header>
-      <div class="iconfont3" v-link="{path: '/index/neighbor'}">&#xe611;</div>
+      <div class="iconfont3" @click="back">&#xe611;</div>
       <div v-show="isshow" class="iconfont3">&#xe603;</div>
       <div>邻里团</div>
       <div class="iconfont3">&#xe61d;</div>
@@ -71,7 +71,11 @@
   },
   computed: {},
   mounted () {},
-  methods: {},
+  methods: {
+    back(){
+      window.history.go(-1);
+    }
+  },
   components: {}
   }
 </script>

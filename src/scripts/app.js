@@ -27,10 +27,14 @@ import login from './component/login.vue';
 import mydetail from './component/mydetail.vue';
 import guide from './component/guide.vue';
 import setName from './component/setName.vue';
-import setDescribe from './component/setDescribe.vue';
+import suggestions from './component/suggestions.vue';
 import setTel from './component/setTel.vue';
 import setSex from './component/setSex.vue';
 import buycar from './component/buycar.vue';
+import setting from './component/setting.vue';
+import order from './component/order.vue';
+import address from './component/address.vue';
+import coupon from './component/coupon.vue';
 
 import Vuex from './libs/vuex.min.js';
 import VueRouter from './libs/vue-router';
@@ -61,7 +65,12 @@ router.map({
         component: neighbor
       },
       '/my': {
-        component: my
+        component: my,
+        subRoutes: {
+          '/setting': {
+            component: setting
+          }
+        }
       },
       '/service': {
         component: service
@@ -133,14 +142,26 @@ router.map({
   '/setSex': {
     component:setSex
   },
-  '/setDescribe': {
-    component:setDescribe
+  '/suggestions': {
+    component:suggestions
   },
   '/setTel': {
     component:setTel
   },
   '/buycar': {
     component:buycar
+  },
+  '/setting': {
+    component:setting
+  },
+  '/order': {
+    component:order
+  },
+  '/address': {
+    component:address
+  },
+  '/coupon': {
+    component:coupon
   }
 });
 

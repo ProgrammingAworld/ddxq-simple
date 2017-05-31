@@ -44,7 +44,7 @@
       return {}
     },
     ready() {
-      this.change(2);
+      this.change(1);
     },
     computed: {},
     mounted () {},

@@ -29,6 +29,38 @@ body{
       }
     }
   }
+  #buy-car{
+    height: 44px;
+    background: white;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 0 15px;
+    @include flexbox();
+    @include flex-direction(row);
+    @include align-items(center);
+    img{
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .total-price{
+      color: #fe602b;
+      @include flex(1);
+      font-size: 16px;
+    }
+    .num{
+      margin-right: 5px;
+    }
+    .button{
+      height: 28px;
+      color: #fff;
+      width: 70px;
+      text-align: center;
+      line-height: 28px;
+      background: #fe602b;
+      border-radius: 5px;
+    }
+  }
   .ontime{
     height:0.3rem;
     line-height:0.3rem;
@@ -68,6 +100,7 @@ body{
         .pro-infor{
           @include flexbox();
           padding-bottom: .2rem;
+          width: 75%;
           >img{
             height:.4rem;
             width:.4rem;

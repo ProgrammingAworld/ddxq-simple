@@ -1,0 +1,63 @@
+{
+   "goodslist":[{
+         "id":1,
+         "store":"商家",
+         "deliverway":"发货",
+         "isfree":0,
+         "free":8.00,
+         "img":"./images/1468463011481.jpg",
+         "name":"【今日特惠】酸汤肥牛 | 再来一碗！！！",
+         "size":"中碗|酸爽~清爽！迟到爽",
+         "choose":true,
+         "show":true,
+         "price":29.00,
+         "number":1,
+         "total":29.00
+      },
+      {
+            "id":2,
+            "store":"商家",
+            "deliverway":"发货",
+            "isfree":0,
+            "free":8.00,
+            "img":"./images/1468463011482.jpg",
+            "name":"天然野生粽叶 50片/包",
+            "size":"买粽叶送传统粽绳 越煮越清香~",
+            "choose":true,
+            "show":true,
+            "price":8.60,
+            "number":1,
+            "total":8.60
+         },
+         {
+               "id":3,
+               "store":"商家",
+               "deliverway":"发货",
+               "isfree":0,
+               "free":8.00,
+               "img":"./images/1468463011483.jpg",
+               "name":"新鲜活杀鲈鱼1条 约320-400g",
+               "size":"医生和营养师工人的营养补品",
+               "choose":true,
+               "show":true,
+               "price":17.00,
+               "number":1,
+               "total":17.00
+            },
+            {
+                  "id":4,
+                  "store":"商家",
+                  "deliverway":"发货",
+                  "isfree":0,
+                  "free":8.00,
+                  "img":"./images/1468463011484.jpg",
+                  "name":"8424西瓜1个 2.2~3kg",
+                  "size":"8424 西瓜的瓜中之王",
+                  "choose":true,
+                  "show":true,
+                  "price":24.00,
+                  "number":1,
+                  "total":24.00
+               }
+   ]
+}

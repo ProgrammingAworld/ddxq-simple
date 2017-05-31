@@ -13,6 +13,12 @@
       </div>
       <div class="mylist">
         <ul class="my-top">
+          <li v-link="{path: '/order'}">
+            <img src="/android_asset/www/images/my3.png" alt="" />
+            <div class="list-box">
+              <span>我的订单</span>
+            </div>
+          </li>
           <li>
             <img src="/android_asset/www/images/my1.png" alt="" />
             <div class="list-box listshead">
@@ -20,63 +26,39 @@
               <span>{{select}}</span>
             </div>
           </li>
-          <li>
+          <li v-link="{path: '/address'}">
             <img src="/android_asset/www/images/my2.png" alt="" />
             <div class="list-box">
               <span>我的地址簿</span>
             </div>
           </li>
-          <li>
-            <img src="/android_asset/www/images/my3.png" alt="" />
-            <div class="list-box">
-              <span>我的订单</span>
-            </div>
-          </li>
-          <li>
+          <li v-link="{path: '/coupon'}">
             <img src="/android_asset/www/images/my4.png" alt="" />
-            <div class="list-box">
-              <span>消息中心</span>
-            </div>
-          </li>
-          <li>
-            <img src="/android_asset/www/images/my5.png" alt="" />
             <div class="list-box">
               <span>我的叮咚券</span>
             </div>
           </li>
+
         </ul>
 
-        <ul class="my-center">
-          <li>
-            <img src="/android_asset/www/images/my6.png" alt="" />
-            <div class="list-box">
-              <span>我的邻居</span>
-            </div>
-          </li>
-          <li>
-            <img src="/android_asset/www/images/my7.png" alt="" />
-            <div class="list-box">
-              <span>我的收藏</span>
-            </div>
-          </li>
-        </ul>
+
         <ul class="my-bottom">
-          <li>
+          <li v-link="{path:'/suggestions'}">
+            <img src="/android_asset/www/images/my9.png" alt="" />
+            <div class="list-box">
+              <span>意见与建议</span>
+            </div>
+          </li>
+          <li v-link="{path:'/setting'}">
             <img src="/android_asset/www/images/my8.png" alt="" />
             <div class="list-box">
               <span>应用设置</span>
             </div>
           </li>
           <li>
-            <img src="/android_asset/www/images/my9.png" alt="" />
-            <div class="list-box">
-              <span>意见与建议</span>
-            </div>
-          </li>
-          <li>
             <img src="/android_asset/www/images/my10.png" alt="" />
             <div class="list-box">
-              <span>拨打服务电话</span>
+              <a href="tel:18753377153"><span>拨打服务电话</span></a>
             </div>
           </li>
         </ul>
